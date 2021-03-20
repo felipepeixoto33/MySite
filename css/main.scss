@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #007af3;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  //Modifies every element that has the class navbar
+  background: white;
+  padding: 1em;
+
+  .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    place-content: space-between; //Moves content to the right bc of the flex display.
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+}
+
+a {
+  //Changes the properties of all the elements that have this selector
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em; //order for 4 units: top right bottom left. //for 2 units: top-bottom sides
+}
